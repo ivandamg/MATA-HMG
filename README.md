@@ -18,3 +18,12 @@ https://www.ncbi.nlm.nih.gov/assembly/
   # Make summary table of blast hits. evalue > 1.e-06 > length min 90 %
   
 2. 
+
+
+
+
+3. from gff to fasta bash command
+
+      cat Predicted_prot_hint_Glomus_Nu6_genome_masked.gff | grep "#" | grep -v "CDS" | grep -v "UTR" | grep -v "Evidence" | grep -v "%" | grep -v "end" | grep -v "hint" | grep -v "###" | sed 's/start gene />/' | sed 's/protein sequence //' | tr ' = [' ' ' | tr ']' ' ' | sed 's/   //' | tr '#' ' ' | sed 's/  //' | grep -v 'E:' | grep -v "sequence number" | grep -v "none" | grep -v "command" > Predicted_prot_hint_Glomus_Nu6_genome_masked.faa
+
+       open in text editor and erase first rows and double spaces
