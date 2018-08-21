@@ -27,3 +27,13 @@
 
 - Discard duplicate matchs on genome by discarding a second match. in excel.
    MATA-HMG_Predictedn6_unique_VF.txt
+
+# 2. Identify gene transcription on those genes. 
+
+- Create list of HMG-box in predicted-n6 (in excel)
+   HMG-box_Predictedn6_names_vf.txt
+   
+- Identify the list of genes on transcriptomic data and plot results
+Script RNA_double_inoc_onlyMATA-HMG_values_v7.R 
+Extract all counts per sample, select only the HMG-box and plot the ones that display a confident number of reads
+
