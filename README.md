@@ -26,3 +26,4 @@
       cat db_genomes/blast_PF00505-HMG-box_Predictedn6.xml | awk '$3 == 100' > MATA-HMG_Predictedn6.txt
 
 - Discard duplicate matchs on genome by discarding a second match. in excel.
+   MATA-HMG_Predictedn6_unique_VF.txt
